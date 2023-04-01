@@ -1,0 +1,28 @@
+@use "@styles/scss/base/variables";
+
+.container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: transparent;
+  padding: 1rem variables.$layoutPadding;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+  ul {
+    display: block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    display: inline;
+    margin: 0 1rem;
+  }
+}
