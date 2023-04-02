@@ -7,7 +7,7 @@
 html,
 body {
   font-family: "Noto Sans TC", sans-serif;
-  word-spacing: 0.2rem;
+  letter-spacing: 2px;
   line-height: 1.6rem;
   overflow-x: hidden;
 }
