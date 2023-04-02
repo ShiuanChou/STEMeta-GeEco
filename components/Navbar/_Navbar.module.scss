@@ -1,4 +1,4 @@
-@use "@styles/scss/base/variables";
+@use "@styles/scss/base/variables" as v;
 
 .container {
   position: fixed;
@@ -6,12 +6,13 @@
   right: 0;
   left: 0;
   background-color: transparent;
-  padding: 1rem variables.$layoutPadding;
+  padding: 1rem v.$layoutPadding;
   min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white;
+  color: #eeefef;
+  z-index: 1000;
 
   ul {
     display: block;
@@ -24,5 +25,7 @@
   li {
     display: inline;
     margin: 0 1rem;
+    cursor: pointer;
+    user-select: none;
   }
 }
