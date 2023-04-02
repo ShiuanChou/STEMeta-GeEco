@@ -4,9 +4,8 @@ import Navbar from '@components/Navbar'
 import VideoBanner from '@components/VideoBanner'
 import Intro from '@components/Intro'
 import Topic from '@components/Topic'
-
-const inter = Inter({ subsets: ['latin'] })
 import Footer from '@components/Footer'
+import Advertise from '@components/Advertise'
 
 export default function Home() {
   return (
@@ -21,6 +20,7 @@ export default function Home() {
       <VideoBanner />
       <Intro />
       <Topic />
+      <Advertise />
       <Footer />
     </>
   )
