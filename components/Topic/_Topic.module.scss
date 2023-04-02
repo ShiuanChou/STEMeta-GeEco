@@ -1,0 +1,98 @@
+@use "@styles/scss/base/variables" as v;
+
+.container {
+  width: 100vw;
+  height: auto;
+  padding: 2rem v.$layoutPadding;
+  background-color: #eeefef;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+}
+
+.title {
+  margin: 5rem 2.5rem;
+}
+
+.topic {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+
+  a {
+    max-width: calc(100% / 3 - 2rem);
+    min-width: calc(100% / 3 - 2rem);
+    margin: 1rem;
+  }
+
+  .item {
+    overflow: hidden;
+    height: 70vh;
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    color: #eeefef;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    user-select: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.nft {
+      background-image: url(../../public/images/01.png);
+    }
+
+    &.metaverse {
+      background-image: url(../../public/images/02.png);
+    }
+
+    &.chatgpt {
+      background-image: url(../../public/images/03.png);
+    }
+
+    &.demo {
+      background-image: url(../../public/images/04.png);
+    }
+
+    &.game {
+      background-image: url(../../public/images/05.png);
+    }
+
+    h2 {
+      word-break: normal;
+      word-spacing: 2px;
+    }
+
+    h2,
+    span {
+      z-index: 1;
+    }
+
+    span {
+      overflow: hidden;
+      max-height: 0;
+    }
+
+    &:hover span {
+      max-height: 300px;
+      animation: cubic-bezier(0.4, 0, 0.2, 1) 0.5s a;
+      transition: max-height 3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, #0e0e0e 0, transparent);
+    }
+  }
+}
