@@ -1,0 +1,19 @@
+.container {
+  height: 85vh;
+  width: 100vw;
+  background-color: #0e0e0e;
+  background: linear-gradient(0deg, #0e0e0e, #0e0e0e9d, #0e0e0e),
+    url(../../public//images/ad.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #eeeffe;
+  flex-direction: column;
+
+  h2 {
+    font-size: 26px;
+  }
+}
