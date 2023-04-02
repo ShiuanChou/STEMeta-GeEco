@@ -6,6 +6,7 @@ import Intro from '@components/Intro'
 import Topic from '@components/Topic'
 
 const inter = Inter({ subsets: ['latin'] })
+import Footer from '@components/Footer'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <VideoBanner />
       <Intro />
       <Topic />
+      <Footer />
     </>
   )
 }
