@@ -16,8 +16,8 @@
   user-select: none;
 
   .logo {
-    height: 80px;
-    width: auto;
+    height: 100%;
+    width: 100px;
 
     img {
       width: 100%;
@@ -102,5 +102,9 @@
 @media only screen and (max-width: 640px) {
   .container {
     padding: 1rem v.$smallPadding;
+
+    .logo {
+      width: 80px;
+    }
   }
 }
