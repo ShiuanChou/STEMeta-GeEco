@@ -1,8 +1,10 @@
+@use "@styles/scss/base/variables" as v;
+
 .container {
   height: 85vh;
   width: 100vw;
-  background-color: #0e0e0e;
-  background: linear-gradient(0deg, #0e0e0e, #0e0e0e9d, #0e0e0e),
+  background-color: v.$mainDarkColor;
+  background: linear-gradient(0deg, v.$mainDarkColor, #0e0e0e9d, v.$mainDarkColor),
     url(../../public//images/ad.jpg);
   background-size: cover;
   background-position: right;
@@ -10,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #eeeffe;
+  color: v.$mainFontColor;
   flex-direction: column;
 
   h2 {
