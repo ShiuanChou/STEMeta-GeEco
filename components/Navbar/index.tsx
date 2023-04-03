@@ -19,7 +19,6 @@ export default function Navbar() {
             <span className={styles.menu}>
                 <FiMenu />
             </span>
-            {/* <div>Login</div> */}
         </nav>
     )
 }
