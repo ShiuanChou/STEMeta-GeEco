@@ -18,7 +18,7 @@ export default function VideoBanner() {
             </video>
             <section className={styles.title}>
                 <h1>STEMeta & GeEco</h1>
-                <p>"元"創教育{' | '}女力行<br />助推女性跨入STEM領域</p>
+                <p>&quot;元&quot;創教育{' | '}女力行<br />助推女性跨入STEM領域</p>
                 <div className={styles.more} onClick={handleScroll}>
                     <span><FiArrowDown /></span>
                     <p>開始探索</p>
