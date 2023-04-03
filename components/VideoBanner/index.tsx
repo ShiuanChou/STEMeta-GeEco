@@ -2,7 +2,7 @@ import styles from './_VideoBanner.module.scss';
 import { FiArrowDown } from 'react-icons/fi'
 
 export default function VideoBanner() {
-    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    const handleScroll = (e: React.MouseEvent<Element, MouseEvent>) : void => {
         e.preventDefault();
         const elem = document.getElementById('intro');
         window.scrollTo({
