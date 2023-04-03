@@ -3,7 +3,7 @@
 .container {
   width: 100vw;
   height: auto;
-  padding: 2rem v.$layoutPadding;
+  padding: 0 v.$layoutPadding;
   background-color: v.$mainDarkColor;
   display: flex;
   justify-content: flex-start;
@@ -13,7 +13,7 @@
 }
 
 .title {
-  margin: 0 2.5rem 5rem 2.5rem;
+  margin: 2.5rem;
   color: v.$heiglightColor;
 }
 
@@ -24,7 +24,7 @@
   justify-content: center;
   align-content: center;
   padding-bottom: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   position: relative;
 
   a {
@@ -84,7 +84,7 @@
     }
 
     &:hover span {
-      max-height: 300px;
+      max-height: 100%;
       animation: cubic-bezier(0.4, 0, 0.2, 1) 0.5s a;
       transition: max-height 3s cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -101,8 +101,45 @@
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: 0 v.$largePadding;
+  }
+  .topic {
+    .item {
+      padding: 1.5rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
-    padding: 2rem v.$middlePadding;
+    padding: 0 v.$middlePadding;
+  }
+  .topic {
+    a {
+      max-width: calc(100% / 2 - 2rem);
+    }
+
+    .item {
+      height: 50vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .topic .item span {
+    max-height: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: 0 v.$smallPadding;
+  }
+  .topic {
+    a {
+      max-width: calc(100% / 1 - 2rem);
+    }
   }
 }

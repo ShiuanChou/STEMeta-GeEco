@@ -2,7 +2,7 @@
 
 .container {
   background: v.$mainDarkColor;
-  padding: 5rem v.$layoutPadding;
+  padding: 0 v.$layoutPadding;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,8 +46,31 @@
   }
 }
 
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: 2.5rem v.$largePadding;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
-    padding: 5rem v.$middlePadding;
+    padding: 2.5rem v.$middlePadding;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+
+    .wrap.person {
+      padding: 0;
+      margin-top: 2rem;
+
+      &::after {
+        width: 0;
+        height: 0;
+      }
+    }
   }
 }

@@ -34,7 +34,7 @@
 
   li {
     display: inline;
-    margin: 0 1rem;
+    margin-left: 1rem;
     cursor: pointer;
     position: relative;
 
@@ -72,6 +72,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 1536px) {
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: 1rem v.$largePadding;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .container {
     padding: 1rem v.$middlePadding;
@@ -82,6 +92,19 @@
 
     .menu {
       display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    padding: 1rem v.$smallPadding;
+
+    .logo {
+      height: 50px;
     }
   }
 }

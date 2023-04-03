@@ -1,11 +1,13 @@
 @use "@styles/scss/base/variables" as v;
 
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2rem 0;
   width: 100vw;
   background: v.$mainDarkColor;
-  height: auto;
+  height: 20vh;
   color: v.$mainFontColor;
-  text-align: center;
   font-size: 14px;
 }
