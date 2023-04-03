@@ -10,6 +10,7 @@ body {
   letter-spacing: 2px;
   line-height: 1.6rem;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -40,7 +41,7 @@ button {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(166, 166, 166)
+  background: rgb(166, 166, 166);
 }
 
 ::selection {
