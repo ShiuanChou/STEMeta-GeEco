@@ -4,7 +4,7 @@
   width: 100vw;
   height: auto;
   padding: 2rem v.$layoutPadding;
-  background-color: #0e0e0e;
+  background-color: v.$mainDarkColor;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -13,15 +13,18 @@
 }
 
 .title {
-  margin: 5rem 2.5rem;
-  color: #fb1f8d;
+  margin: 0 2.5rem 5rem 2.5rem;
+  color: v.$heiglightColor;
 }
 
 .topic {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
   padding-bottom: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
   position: relative;
 
   a {
@@ -36,7 +39,7 @@
     position: relative;
     padding: 2rem;
     width: 100%;
-    color: #eeefef;
+    color: v.$mainFontColor;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -93,7 +96,13 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(0deg, #0e0e0e 0, transparent);
+      background: linear-gradient(0deg, v.$mainDarkColor 0, transparent);
     }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 2rem v.$middlePadding;
   }
 }
