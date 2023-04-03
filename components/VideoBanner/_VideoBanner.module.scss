@@ -37,6 +37,10 @@
   font-size: large;
   color: v.$mainFontColor;
   z-index: 1;
+
+  h1 {
+    color: v.$heiglightColor;
+  }
 }
 
 .more {
