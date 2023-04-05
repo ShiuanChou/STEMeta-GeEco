@@ -34,12 +34,19 @@
   margin: 5rem 0;
   position: relative;
   padding: 0 v.$layoutPadding;
-  font-size: large;
   color: v.$mainFontColor;
   z-index: 1;
 
   h1 {
     color: v.$heiglightColor;
+    line-height: 5rem;
+    font-size: 60px;
+
+    &.highlight {
+      background: -webkit-linear-gradient(175deg, #da22ff, #9733ee);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 }
 
@@ -94,6 +101,9 @@
     h1,
     p {
       text-align: center;
+    }
+    h1 {
+      font-size: 40px;
     }
   }
   .more {
