@@ -6,13 +6,13 @@ const data = [
     {
         title: 'NFT學習旅程展示區',
         content: '創造出一個有效的數位動力系統 ，使學生在完成課程或獲得成就時，可以獲得相應的NFT作為獎勵。',
-        link: 'https://www.google.com/',
+        link: '/course',
         id: 'nft'
     },
     {
         title: 'Metaverse互動體驗',
         content: '透過元宇宙遊戲化教育提供一種在學習過程中提供更有趣、更吸引人的教育體驗，沉浸式學習提升學習動機，高度互動加強學科知識內化。',
-        link: 'https://www.google.com/',
+        link: 'https://www.muse.place/stemetageeco',
         id: 'metaverse'
     },
     {
