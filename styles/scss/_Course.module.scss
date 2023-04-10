@@ -1,0 +1,94 @@
+@use "@styles/scss/base/variables" as v;
+
+.container {
+  padding: v.$layoutPadding 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrap {
+  margin: 3rem 0;
+}
+
+.item {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.cousreImg {
+  width: 30%;
+  height: auto;
+  margin-right: 3rem;
+  border-radius: 5px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  &.course2,
+  &.course4,
+  &.course6 {
+    order: 2;
+    margin-left: 3rem;
+    margin-right: 0rem;
+  }
+}
+
+.content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    padding: v.$largePadding 20rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: v.$middlePadding 10rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: v.$middlePadding;
+  }
+
+  .cousreImg {
+    width: 40%;
+  }
+
+  .content {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .item {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cousreImg,
+  .content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .cousreImg {
+    &.course2,
+    &.course4,
+    &.course6 {
+      order: 0;
+      margin: 0;
+    }
+  }
+}
