@@ -20,7 +20,6 @@ export default function Home() {
       <Intro />
       <Topic />
       <Advertise />
-      <Footer />
     </>
   )
 }

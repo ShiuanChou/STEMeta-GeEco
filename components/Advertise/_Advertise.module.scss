@@ -4,31 +4,53 @@
   height: 100vh;
   width: 100vw;
   background-color: v.$mainDarkColor;
-  background: linear-gradient(0deg, v.$mainDarkColor, #0e0e0e9d, v.$mainDarkColor),
-    url(/images/ad.jpg);
+  background: linear-gradient(0deg, #eaeaea0b, v.$mainDarkColor),
+    url(/images/ad.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
   color: v.$mainFontColor;
   flex-direction: column;
+  padding: 2rem v.$layoutPadding;
 
   h2 {
-    font-size: 26px;
-    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  button {
+    color: v.$mainFontColor;
+    background: -webkit-linear-gradient(175deg, #da22ff, #9733ee);
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    min-width: 150px;
+    max-width: 160px;
+    margin-top: 1rem;
   }
 }
 
 @media only screen and (max-width: 1280px) {
   .container {
-    height: 80vh;
+    padding: 2rem v.$largePadding;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 2rem v.$middlePadding;
   }
 }
 
 @media only screen and (max-width: 640px) {
   .container {
     padding: v.$smallPadding;
+
+    h2 {
+      font-size: 25px;
+      line-height: 35px;
+    }
   }
 }
