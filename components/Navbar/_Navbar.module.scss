@@ -8,6 +8,7 @@
   background-color: transparent;
   padding: 1rem v.$layoutPadding;
   min-height: 50px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,7 +18,7 @@
 
   .logo {
     height: 100%;
-    width: 100px;
+    width: 150px;
 
     img {
       width: 100%;

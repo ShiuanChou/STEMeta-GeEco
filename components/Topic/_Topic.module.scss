@@ -145,6 +145,9 @@
   .container {
     padding: 0 v.$smallPadding;
   }
+  .title {
+    font-size: 25px;
+  }
   .topic {
     a {
       max-width: calc(100% / 1 - 2rem);
