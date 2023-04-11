@@ -11,10 +11,10 @@ export default function Navbar() {
                 <Image src={logo} alt="logo" />
             </Link>
             <ul className={styles.link}>
-                <li>元宇宙</li>
-                <li>NFT展示</li>
-                <li>證書存放</li>
-                <li>課程簡介</li>
+                <Link href={'https://www.muse.place/stemetageeco'}><li>元宇宙</li></Link>
+                <Link href={'/'}><li>NFT展示</li></Link>
+                <Link href={'/'}><li>證書存放</li></Link>
+                <Link href={'/course'}><li>課程簡介</li></Link>
             </ul>
             <span className={styles.menu}>
                 <FiMenu />

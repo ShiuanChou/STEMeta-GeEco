@@ -12,7 +12,7 @@ const data = [
     {
         title: 'Metaverse互動體驗',
         content: '透過元宇宙遊戲化教育提供一種在學習過程中提供更有趣、更吸引人的教育體驗，沉浸式學習提升學習動機，高度互動加強學科知識內化。',
-        link: '/',
+        link: 'https://www.muse.place/stemetageeco',
         id: 'metaverse'
     },
     {
